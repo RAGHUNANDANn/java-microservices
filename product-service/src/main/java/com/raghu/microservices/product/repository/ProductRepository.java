@@ -1,2 +1,7 @@
-package com.raghu.microservices.product.repository;public class ProductRepository {
+package com.raghu.microservices.product.repository;
+
+import com.raghu.microservices.product.model.Product;
+import org.springframework.data.mongodb.repository.MongoRepository;
+
+public interface ProductRepository extends MongoRepository<Product,String> {
 }

@@ -1,2 +1,6 @@
-package com.raghu.microservices.product.dto;public record ProductRequest() {
+package com.raghu.microservices.product.dto;
+
+import java.math.BigDecimal;
+
+public record ProductRequest(String id, String name, String description, BigDecimal price) {
 }
